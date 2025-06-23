@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>EpicMorg.donation.library</id>
+    <version>1.0.0.0</version>
+    <authors>EpicMorgDev, AurZum, stam, kasthack</authors>
+    <owners>EpicMorgDev, AurZum, stam, kasthack</owners>
+    <description>Donation popup for WinForms (.NET 2.0–9.0)</description>
+    <copyright>Copyright © EpicMorg 2025</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+	<icon>images/emg.png</icon>
+    <tags>steam epicmorg donation</tags>
+	<readme>docs\README.md</readme>
+    <repository type="git" url="https://github.com/EpicMorg/emg.donation.library" />
+    <dependencies>
+      <group targetFramework=".NETFramework2.0" />
+      <group targetFramework="net8.0-windows7" />
+    </dependencies>
+	<releaseNotes>First release</releaseNotes>
+  </metadata>
+  <files>
+    <!-- .NET Framework 2.0–4.8 -->
+    <file src="emg.donation.library.net20\bin\Release\*.dll" target="lib\net20\" />
+    <file src="emg.donation.library.net20\bin\Release\ru\*.dll" target="lib\net20\ru\" />
+
+    <!-- .NET 5–8 -->
+    <file src="emg.donation.library\bin\Release\net8.0-windows\*.dll" target="lib\net8.0-windows7\" />
+    <file src="emg.donation.library\bin\Release\net8.0-windows\ru\*.resources.dll" target="lib\net8.0-windows7\ru\" />
+	
+	<file src="..\README.md" target="docs\" />
+	<file src="media\emg.png" target="images\" />
+  </files>
+</package>
